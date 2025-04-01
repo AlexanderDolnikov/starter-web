@@ -1,0 +1,206 @@
+  171  cd e:
+  172  cd Alexander/IBA/Learning/
+  173  git clone https://github.com/AlexanderDolnikov/starter-web.git
+  174  cd starter-web/
+  175  ls
+  176  git status
+  177  npp hipster.txt
+  178  ls
+  179  git status
+  180  git add hipster.txt 
+  181  git status
+  182  git commit -m "Added hipster.txt"
+  183* 
+  184  git status
+  185  git commit -am "Added 2nd paragraph to hipster.txt"
+  186  git pull
+  187  git help
+  188  git help push
+  189  git ls-files
+  190  npp newfile.txt
+  191  git status
+  192  git ls-files
+  193  git add newfile.txt
+  194  git status
+  195  npp hipster.txt
+  196  git status
+  197  git commit -m "Added newfile.txt"
+  198  git status
+  199   git add hipster.txt
+  200  git status
+  201  npp hipster.txt
+  202  git status
+  203   git add hipster.txt
+  204  git status
+  205  git commit -m "Added some text to hipster.txt"
+  206  clean
+  207  clear
+  208  mkdir -p level1/level2/level3/level4
+  209  cd level1/
+  210  npp level1.txt
+  211  ls
+  212  cd level2/
+  213  npp level2-file.txt
+  214  ls
+  215  cd level3/
+  216  npp level3-file.txt
+  217  ls
+  218  cd ../../..
+  219  git status
+  220  git add .
+  221  git status
+  222  git mv level1/level1.txt level1/level1-file.txt
+  223  git status
+  224  git commit -m "Added several files recursively"
+  225  cd level1/
+  226  ls
+  227  npp level1-file.txt 
+  228  git status
+  229  git add level1-file.txt
+  230  git status
+  231  git reset HEAD level1-file.txt
+  232  git status
+  233  ls
+  234  npp level1-file.txt 
+  235  git status
+  236  git restore level1-file.txt
+  237  git status
+  238  npp level1-file.txt 
+  239  git status
+  240  git checkout -- level1-file.txt
+  241  git status
+  242  npp level1-file.txt 
+  243  clear
+  244  cd level2/
+  245  cd level3/
+  246  git mv level3-file.txt level3.txt
+  247  git status
+  248  git commit -m "Renamed level3-file.txt into level3.txt"
+  249  cd ..
+  250  mv level2-file.txt level2.txt
+  251  git status
+  252  git add -A
+  253  git status
+  254  git commit
+  255  clear
+  256  ls
+  257  git mv level2.txt 2.txt
+  258  git status
+  259  git mv 2.txt level2.txt
+  260  git status
+  261  git mv level2.txt level3/
+  262  ls
+  263  cd level3/
+  264  git status
+  265  git commit -m "Moved level2.txt to level3/level2.txt"
+  266  mv level2.txt ..
+  267  ls
+  268  cd //
+  269  cd ..
+  270  ls
+  271  cd e:
+  272  cd Alexander/IBA/Learning/starter-web/
+  273  cd level1/level2/
+  274  ls
+  275  git status
+  276  git add -A
+  277  git status
+  278  git commit -m "Moved level2.txt back to level2/"
+  279  git status
+  280  git add -A
+  281  git status
+  282  git status
+  283  git add level1.txt
+  284  cd ..
+  285  git add level1.txt
+  286  git status
+  287  git add level1-file.txt
+  288  git status
+  289  git status
+  290  git add level1.txt
+  291  git status
+  292  git add -u
+  293  git status
+  294  git commit -m "renamed level1-file.txt into level1.txt"
+  295  cd ..
+  296  clear
+  297  npp doomed.txt
+  298  git status
+  299  git rm doomed.txt 
+  300  rm doomed.txt 
+  301  ls
+  302  git status
+  303  git ls-files
+  304  ls
+  305  git rm newfile.txt 
+  306  git status
+  307  git commit -m "Deleted newfile.txt"
+  308  git status
+  309  git rm hipster.txt 
+  310  git status
+  311  git reset HEAD hipster.txt
+  312  git status
+  313  git restore hipster.txt 
+  314  git status
+  315  rm hipster.txt 
+  316  git status
+  317  git add -A
+  318  git status
+  319  git commit -m "Deleted hipster.txt"
+  320  rm -rf level1/
+  321  git status
+  322  git add -A
+  323  git status
+  324  git commit -m "Deleted level1/ with rm -rf"
+  325  git status
+  326  clear
+  327  git log
+  328  git log --abbrev-commit
+  329  git log --oneline --graph --decorate
+  330  git log 7a2d567...c67fad1
+  331  git log --since="3 days ago"
+  332  git log --since="1 days ago"
+  333  git log --since="10 minutes ago"
+  334  git log -- hipster.txt
+  335  git log --follow -- level1/level2/level2.txt
+  336  git show f35411f561d5a7689b5776a4d79f5e957958aafc
+  337  git log --oneline --graph --decorate
+  338  git log --all --graph --decorate
+  339  git log --all --graph --decorate --oneline
+  340  git hist
+  341  git hist
+  342  git config --global alias.hist "git log --all --graph --decorate --oneline"
+  343  git hist
+  344  git config --global alias.hist "log --all --graph --decorate --oneline"
+  345  git hist
+  346  npp ~/.gitconfig
+  347  git hist
+  348  npp ~/.gitconfig
+  349  git hist
+  350  clear
+  351  ls
+  352  ls -al
+  353  npp .gitignore
+  354  git status
+  355  git add .gitignore 
+  356  git status
+  357  git commit -m "Added .gitignore file"
+  358  ls
+  359  npp access.log
+  360  git status
+  361  npp .gitignore 
+  362  git status
+  363  mkdir logs
+  364  mv access.log logs
+  365  ls
+  366  cd logs/
+  367  ls
+  368  cp access.log access.2000-11-04
+  369  git status
+  370  cd ..
+  371  git status
+  372  npp .gitignore 
+  373  git status
+  374  git commit -am "Updated .gitignore to ignore logs/ directory"
+  375  git pull origin master
+  376  history >> history.txt
