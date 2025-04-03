@@ -16,4 +16,4 @@ some more text - 3
 
 ### New topic
 
-that's a new topic! - 4
+that's a new topic - 4
