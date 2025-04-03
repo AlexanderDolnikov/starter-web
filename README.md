@@ -4,12 +4,16 @@ This repository is for showing how Git and GitHub work
 
 ## Introduction
 
-intro text
+intro text - 1
 
 ## Purpose
 
-purpose text
+purpose text - 2
 
 ## How to contribute
 
-some more text
+some more text - 3
+
+### New topic
+
+that's a new topic! - 4
