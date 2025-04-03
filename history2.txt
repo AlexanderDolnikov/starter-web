@@ -1,0 +1,71 @@
+  171  cd e:
+  172  cd Alexander/IBA/Learning/starter-web/
+  173  npp README.md
+  174  git status
+  175  git add -A
+  176  git status
+  177  git commit -m "Updated README.md"
+  178  git push origin master
+  179  npp README.md
+  180  git commit -ma "Added text to README.md"
+  181  git status
+  182  git commit -ma "Added text to README.md"
+  183  git add -A
+  184  git commit -ma "Added text to README.md"
+  185  git commit -m "Added text to README.md"
+  186  git push origin master
+  187  npp README.md
+  188  git status
+  189  git diff
+  190  git difftool
+  191  git difftool
+  192  git status
+  193  git diff HEAD
+  194  git difftool HEAD
+  195  git difftool --tool-help
+  196  [200~git config --global diff.tool p4merge
+  197  ~git config --global diff.tool p4merge
+  198  git config --global diff.tool p4merge
+  199  git difftool
+  200  git diff --staged HEAD
+  201  git difftool --staged HEAD
+  202  git status
+  203  npp README.md 
+  204  git diff --staged HEAD
+  205  git add -A
+  206  git diff --staged HEAD
+  207  git diff HEAD
+  208  git difftool --staged HEAD
+  209  ls
+  210  npp simple.html 
+  211  git status
+  212  npp README.md 
+  213  git status
+  214  git diff
+  215  git diff -- README.md
+  216  git difftool -- README.md
+  217  clear
+  218  git log --online
+  219  git log --oneline
+  220  git diff 7be50c7 HEAD
+  221  git diff HEAD HEAD^
+  222  git difftool HEAD HEAD^
+  223  git log --oneline
+  224  git diff 7be50c7 6400c8f
+  225  git difftool 7be50c7 6400c8f
+  226  git diff 7be50c7 6400c8f -- hipster.txt
+  227  git diff master origin/master
+  228  git status
+  229  git commit -m "Updated Readme"
+  230  git add -A
+  231  git commit -m "Updated Readme"
+  232  git diff master origin/master
+  233  git difftool master origin/master
+  234  git add /
+  235  git add .
+  236  git status
+  237  git pull
+  238  git push origin/master
+  239  ls
+  240  mv history.txt history1.txt 
+  241  history > history2.txt
