@@ -17,5 +17,6 @@ some more text - 3
 ### New topic
 
 that's a new topic - 4
+and some more text
 
 2025 Git.Training
