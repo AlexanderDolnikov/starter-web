@@ -1,0 +1,97 @@
+    1  git pull
+    2  git status
+    3  ls
+    4  git branch -a
+    5  git branch mynewbranch
+    6  git branch -a
+    7  git checkout mynewbranch 
+    8  git branch -a
+    9  git log --oneline --decorate
+   10* git checkout m
+   11  git branch -m mynewbranch newbranch
+   12  git branch -a
+   13  git branch -d newbranch 
+   14  git branch -a
+   15  git checkout -b title-change
+   16  git status
+   17  npp simple.html 
+   18  git status
+   19  git commmit -am "Changing title of simple.html"
+   20  git commit -am "Changing title of simple.html"
+   21  git log --oneline --decorate
+   22  git checkout master
+   23  git log --oneline --decorate
+   24  git diff title-change
+   25  git diff title-change master
+   26  git diff master title-change
+   27  git difftool master title-change
+   28  git merge title-change 
+   29   git log --oneline --decorate --graph
+   30  git branch -d title-change 
+   31  git branch -a
+   32   git log --oneline --decorate --graph
+   33  git checkout -b add-copyright
+   34  git branch -a
+   35  npp simple.html 
+   36  git status
+   37  git commit -am "Adding copytight into simple.html"
+   38  npp README.md 
+   39  git commit -am "Adding copytight into README.md"
+   40  git status
+   41   git log --oneline --decorate --graph
+   42  git checkout master
+   43  git difftool master add-copyright 
+   44  git merge add-copyright --no-ff
+   45   git log --oneline --decorate --graph
+   46  git branch -d add-copyright 
+   47   git log --oneline --decorate --graph
+   48  git status
+   49  git checkout -b simple-changes
+   50  npp humans.txt 
+   51  git status
+   52  git commit -am "Added my namy to human.txt"
+   53  git checkout master
+   54  npp README.md 
+   55  git status
+   56  git commit -am "Added some text to readme.md"
+   57   git log --oneline --decorate --graph
+   58   git log --oneline --decorate --graph --all
+   59  git branch
+   60  git merge simple-changes -m "Merging simple-changes into master"
+   61   git log --oneline --decorate --graph --all
+   62  git branch -d simple-changes 
+   63   git log --oneline --decorate --graph --all
+   64  npp humans.txt 
+   65  npp README.md 
+   66  git status
+   67  git checkout -b realwork
+   68  npp simple.html 
+   69  git status
+   70  git commit -am "Some changes to simple.html"
+   71  git checkout master
+   72  npp simple.html 
+   73  git status
+   74  git commit -am "Some changes to simple.html that will result with a conflict"
+   75   git log --oneline --decorate --graph --all
+   76  git diff master realwork 
+   77  git difftool master realwork 
+   78  git merge realwork 
+   79  ls
+   80  npp simple.html 
+   81  git status
+   82  git mergetool
+   83  git status
+   84  git commit -m "Conflict in simple.html was resolved"
+   85  git status
+   86  npp .gitignore 
+   87  git status
+   88  git add .gitignore 
+   89  git commit -m "Updated .gitignore to exclude *.orig files"
+   90  git branch
+   91  git branch -d realwork 
+   92  git log --oneline --graph --decorate
+   93  git status
+   94  git branch
+   95  git pull origin master
+   96  ls
+   97  history >> history3.txt
