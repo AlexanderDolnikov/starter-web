@@ -1,0 +1,71 @@
+    1  clear
+    2  git branch -a
+    3  git checkout -b myfeature
+    4  npp robots.txt 
+    5  git commit -am "Updated robots.txt"
+    6  git checkout master
+    7  npp README.md 
+    8  git commit -am "Updated Readme.md"
+    9  git log --oneline --decorate --all --graph
+   10  git checkout myfeature 
+   11  git rebase master
+   12  npp README.md 
+   13  git commit -am "Updated Readme.md"
+   14  git status
+   15  git log --oneline --decorate --all --graph
+   16  git checkout master
+   17  npp README.md 
+   18   git diff master myfeature 
+   19  git merge myfeature 
+   20  git log --oneline --decorate --all --graph
+   21  git branch -d myfeature 
+   22  git branch -a
+   23  npp simple.html
+   24  git commit -am "MB - before rebase conflicts"
+   25  git status
+   26  git checkout -b bigtrouble
+   27  npp simple.html
+   28  git commit -am "FB - added trouble to simple.html"
+   29  git checkout master
+   30  npp simple.html
+   31  git status
+   32  git commit -am "MB - conflicting changes brewing"
+   33  git log --oneline --decorate --all --graph
+   34  git checkout bigtrouble 
+   35  git difftool master bigtrouble
+   36  git rebase master
+   37  git rebase --abort
+   38  git status
+   39  git log --oneline --decorate --all --graph
+   40  git rebase master
+   41  git mergetool
+   42  git status
+   43  git add .
+   44  git status
+   45  git rebase --continue
+   46  git log --oneline --decorate --all --graph
+   47  npp simple.html
+   48  git commit -am "Updated simple.html after resolving rebase conflict earlier"
+   49  git log --oneline --decorate --all --graph
+   50  git checkout master
+   51  git merge bigtrouble
+   52  git log --oneline --decorate --all --graph
+   53  git pull
+   54  git push 
+   55  git status
+   56  npp simple.html
+   57  git commit -am "local: Updated simple.html copyright notice"
+   58  git status
+   59  git status
+   60  git fetch
+   61  git status
+   62  git pull --rebase
+   63  git status
+   64  git log --oneline --decorate --all --graph
+   65  pwd
+   66  git status 
+   67  git branch
+   68  git branch -d bigtrouble 
+   69  git branch
+   70  ls
+   71  history >> history4.txt
