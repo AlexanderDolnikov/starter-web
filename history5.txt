@@ -1,0 +1,100 @@
+    1  git status
+    2  git checkout master
+    3  git status
+    4  git pull
+    5  ls
+    6  npp simple.html
+    7  git stash
+    8  git status
+    9  npp simple.html
+   10   npp README.md 
+   11  git status
+   12  git commit -am "Updated readme.md"
+   13  git status
+   14  git stash apply
+   15  npp simple.html
+   16  git commit -am "Updated simple.html"
+   17  git status
+   18  git stash list
+   19  git stash drop
+   20  git ls-files
+   21  npp humans.txt 
+   22  git status
+   23  npp aNewFile.txt
+   24  git status
+   25  git stash
+   26  git status
+   27  git stash apply
+   28  git stash drop
+   29  git stash list
+   30  git status
+   31  git stash -u
+   32  git status
+   33  git stash list
+   34  npp README.md 
+   35  git commit -a
+   36  git status
+   37  git stash list
+   38  git stash pop
+   39  git status
+   40  rm aNewFile.txt 
+   41  git status
+   42  git commit -am "Updated humans.txt after stashing"
+   43  git stastus
+   44  git status
+   45  npp simple.html
+   46  git stash save "simple.html title update"
+   47  npp index.html 
+   48  git status
+   49  git stash save "Updated index.html title"
+   50  npp README.md 
+   51  git status
+   52  git stash save "Updated readme.md"
+   53  git stash list
+   54  git stash show stash{1}
+   55  git stash show stash@{1}
+   56  git stash list
+   57  git status
+   58  git stash apply stash@{1}
+   59  git stash list
+   60  git stash drop stash@{1}
+   61  git stash list
+   62  git stash clear
+   63  git stash list
+   64  git status
+   65  npp simple.html
+   66  git status
+   67  npp humans.txt 
+   68  git status
+   69  git add index.html 
+   70  git status
+   71  npp new.md
+   72  git status
+   73  git stash -u
+   74  git status
+   75  git stash branch "newchanges"
+   76  git stash list
+   77  git status
+   78  rn new.md 
+   79  git add.
+   80  git status
+   81  git add .
+   82  git status
+   83  rm new.md 
+   84  git status
+   85* 
+   86  git status
+   87  git restore --staged humans.txt
+   88  git status
+   89  git add .
+   90  git commit -am "Multiple changes to files after git stash branch command"
+   91  git status
+   92  git checkout master
+   93  git merge newchanges 
+   94  git branch -d newchanges 
+   95  git branch
+   96  git status
+   97  git pull
+   98  git push
+   99  ls
+  100  history >> history5.txt
