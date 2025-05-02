@@ -1,0 +1,40 @@
+    1  git hist
+    2  git tag myTag
+    3  git hist
+    4  git tag --list
+    5  git show myTag
+    6  git tag --delete myTag
+    7  clear
+    8  git tag -a v-1.0
+    9  git tag --list
+   10  git hist
+   11  git show v-1.0
+   12  ls
+   13  npp index.html 
+   14  git commit -am "Updated index.html for Tagging example"
+   15  git hist
+   16  git tag -a v-1.1
+   17  npp simple.html
+   18  git commit -am "Updated simple.html for Tagging example"
+   19  git commit --amend
+   20  git tag v-1.2 -m "Release 1.2"
+   21  git tag --list
+   22  git hist
+   23  git diff v-1.0 v-1.2
+   24  git difftool v-1.0 v-1.2
+   25  git tag -a v-0.9-beta c0ddd5f 
+   26  git hist
+   27  git tag -a v-0.8-alpha 1bd131f
+   28  git hist
+   29  git tag -a v-0.8-alpha -f 6a16843 
+   30  git hist
+   31  git tag --list
+   32  git hist
+   33  git push origin v0.9-beta
+   34  git push origin v-0.9-beta
+   35  git push origin v-1.1
+   36  git push origin master --tags
+   37  git tag --list
+   38  git push origin :v-0.8-alpha
+   39  ls
+   40  history >> history6.txt
