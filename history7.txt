@@ -1,0 +1,53 @@
+  474  git pull
+  475  git status
+  476  git hist
+  477  git reflog
+  478  git reset HEAD^
+  479  git hist
+  480  git reset HEAD^
+  481  git hist
+  482  git status
+  483  git reset HEAD^^
+  484  git reflog
+  485  git reset HEAD@{3}
+  486  git status
+  487  git reset HEAD@{3}
+  488  git status
+  489  git reflog
+  490  git reset HEAD@{5}
+  491  git status
+  492  git reflog
+  493  git branch -a
+  494  git fetch origin development
+  495  git fetch origin/development
+  496  git fetch development
+  497  git diff origin master
+  498  git diff development
+  499  git difftool development
+  500  cd e:
+  501  cd Alexander/IBA/Learning/starter-web/
+  502  git status
+  503  git help stash
+  504  git help
+  505  ls
+  506   npp README.md 
+  507  git status
+  508  git commit -am "Updated readme.md"
+  509  git hist
+  510  git branch
+  511  git checkout development
+  512  git hist
+  513  ls
+  514  npp simple.html
+  515  git status
+  516  git commit -am "Updated simple.html"
+  517  git checkout master
+  518   npp README.md 
+  519  git commit -am "Updated readme.md - not a cherry pick"
+  520  git checkout development 
+  521  git status
+  522  git cherry-pick 7a10633
+  523  npp README.md 
+  524  git status
+  525  ls
+  526  history >> history5.txt
